@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="2">
+	<test name="First Mobile">
+		<parameter name="deviceName_" value="device_One" />
+		<parameter name="UDID_" value="bd40918" />
+
+		<parameter name="platformName_" value="Android" />
+		<parameter name="platformVersion_" value="9.0" />
+		<parameter name="URL_" value="0.0.0.0:4723" />
+		<parameter name="UserName" value="Mobile1" />
+		<parameter name="UserEmail" value="abcd@gmail.com" />
+
+		<classes>
+			<class name="appiumlazyguide.ParallelExecution" />
+		</classes>
+	</test>
+
+	<test name="Second Mobile">
+		<parameter name="deviceName_" value="device_two" />
+		<parameter name="UDID_" value="emulator-5554" />
+		<parameter name="platformName_" value="Android" />
+		<parameter name="platformVersion_" value="9.0" />
+		<parameter name="URL_" value="0.0.0.0:4724" />
+		<parameter name="UserName" value="Device 2 " />
+		<parameter name="UserEmail" value="zxcv@gmail.com" />
+		<classes>
+			<class name="appiumlazyguide.ParallelExecution" />
+		</classes>
+	</test>
+
+
+
+</suite> <!-- Suite -->
