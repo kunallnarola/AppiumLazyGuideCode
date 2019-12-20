@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="browser" value="chrome"/>
+  <test thread-count="5" name="First Mobile(failed)">
+    <parameter name="port_" value="4779"/>
+    <parameter name="UserName" value="Mobile1"/>
+    <parameter name="platformVersion_" value="9.0"/>
+    <parameter name="URL_" value="0.0.0.0:"/>
+    <parameter name="UDID_" value="emulator-5554"/>
+    <parameter name="platformName_" value="Android"/>
+    <parameter name="UserEmail" value="abcd@gmail.com"/>
+    <parameter name="deviceName_" value="device_One"/>
+    <classes>
+      <class name="appiumlazyguide.StartAppiumServerThroughCode">
+        <methods>
+          <include name="closeServer"/>
+          <include name="signUp" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- appiumlazyguide.StartAppiumServerThroughCode -->
+    </classes>
+  </test> <!-- First Mobile(failed) -->
+</suite> <!-- Failed suite [Suite] -->

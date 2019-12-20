@@ -25,7 +25,7 @@ public class TestSelendoidApp {
 		        //Set the Desired Capabilities
 				DesiredCapabilities caps = new DesiredCapabilities();
 				caps.setCapability("deviceName", "My"); 
-				caps.setCapability("udid", "bd40918");  
+				caps.setCapability("udid", "emulator-5554");  
 				caps.setCapability("platformName", "Android"); 
 				caps.setCapability("platformVersion", "9.0");	
 				caps.setCapability("noReset", true);				
